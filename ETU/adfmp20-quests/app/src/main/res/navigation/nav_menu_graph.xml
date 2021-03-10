@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.halp.MapFragment"
+        android:label="map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.halp.QuestListFragment"
+        android:label="fragment_quest_list"
+        tools:layout="@layout/fragment_quest_list" >
+        <action
+            android:id="@+id/action_navigation_search_to_filterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_questCardFragment"
+            app:destination="@id/questCardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.example.halp.ReservedFragment"
+        android:label="fragment_reserved_list"
+        tools:layout="@layout/fragment_reserved_list" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.halp.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_accountSettingsFragment"
+            app:destination="@id/accountSettingsFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_newUserFragment"
+            app:destination="@id/newUserFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_preferencesFragment"
+            app:destination="@id/preferencesFragment" />
+        <action
+            android:id="@+id/action_navigation_profile_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newUserFragment"
+        android:name="com.example.halp.NewUserFragment"
+        android:label="fragment_newuser"
+        tools:layout="@layout/fragment_newuser" >
+        <action
+            android:id="@+id/action_newUserFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_newUserFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountSettingsFragment"
+        android:name="com.example.halp.AccountSettingsFragment"
+        android:label="fragment_accout_settings"
+        tools:layout="@layout/fragment_accout_settings" >
+        <action
+            android:id="@+id/action_accountSettingsFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.halp.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" >
+        <action
+            android:id="@+id/action_bookingFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.halp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_passwordRestoreFragment"
+            app:destination="@id/passwordRestoreFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordRestoreFragment"
+        android:name="com.example.halp.PasswordRestoreFragment"
+        android:label="fragment_password_restore"
+        tools:layout="@layout/fragment_password_restore" >
+        <action
+            android:id="@+id/action_passwordRestoreFragment_to_passwordRestoreFinishFragment"
+            app:destination="@id/passwordRestoreFinishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.halp.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.example.halp.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" >
+        <action
+            android:id="@+id/action_filterFragment_to_navigation_search"
+            app:destination="@id/navigation_search" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.halp.SignUpFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questCardFragment"
+        android:name="com.example.halp.QuestCardFragment"
+        android:label="fragment_quest_card"
+        tools:layout="@layout/fragment_quest_card" >
+        <action
+            android:id="@+id/action_questCardFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordRestoreFinishFragment"
+        android:name="com.example.halp.PasswordRestoreFinishFragment"
+        android:label="fragment_password_restore_finish"
+        tools:layout="@layout/fragment_password_restore_finish" >
+        <action
+            android:id="@+id/action_passwordRestoreFinishFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="com.example.halp.PreferencesFragment"
+        android:label="fragment_preferences"
+        tools:layout="@layout/fragment_preferences" >
+        <action
+            android:id="@+id/action_preferencesFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.example.halp.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" >
+        <action
+            android:id="@+id/action_successFragment_to_navigation_orders"
+            app:destination="@id/navigation_orders" />
+        <action
+            android:id="@+id/action_successFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.halp.PaymentFragment"
+        android:label="fragment_payment_page"
+        tools:layout="@layout/fragment_payment_page" >
+        <action
+            android:id="@+id/action_paymentFragment_to_navigation_orders"
+            app:destination="@id/navigation_orders" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.halp.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.example.halp.FavouritesListFragment"
+        android:label="fragment_favourites_list"
+        tools:layout="@layout/fragment_favourites_list" >
+        <action
+            android:id="@+id/action_navigation_favourites_to_questCardFragment"
+            app:destination="@id/questCardFragment" />
+    </fragment>
+
+</navigation>

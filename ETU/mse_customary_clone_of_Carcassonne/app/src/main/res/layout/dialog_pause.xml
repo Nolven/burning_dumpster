@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="wrap_content"
+                                             android:layout_height="wrap_content"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:padding="@dimen/default_padding"
+                                             android:background="@drawable/modal_dialog"
+>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/TitleText"
+              android:maxLines="1"
+              android:textSize="@dimen/title_text_size"
+              android:id="@+id/titleText"
+              android:text="@string/title_pause"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+    />
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/buttonsLayout"
+                  android:layout_marginLeft="@dimen/pause_dialog_side_margin"
+                  android:layout_marginRight="@dimen/pause_dialog_side_margin"
+                  app:layout_constraintVertical_bias="0.8"
+                  app:layout_constraintTop_toBottomOf="@id/titleText"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintLeft_toLeftOf="parent">
+
+        <Button
+                style="@style/MenuButtonStyle"
+                android:text="@string/resume"
+                android:id="@+id/resumeButton"/>
+        <Button
+                style="@style/MenuButtonStyle"
+                android:text="@string/rules"
+                android:id="@+id/rulesButton"/>
+        <Button
+                style="@style/MenuButtonStyle"
+                android:text="@string/exit_to_menu"
+                android:id="@+id/exitButton"/>
+    </LinearLayout>
+
+    <ImageButton
+            style="@style/ImageMenuButtonStyle"
+            app:srcCompat="@drawable/ic_settings"
+            android:id="@+id/settingsButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="0dp"
+    />
+
+    <ImageButton
+            style="@style/ImageMenuButtonStyle"
+            app:srcCompat="@drawable/ic_info"
+            android:id="@+id/infoButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="0dp"
+    />
+
+</android.support.constraint.ConstraintLayout>

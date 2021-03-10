@@ -1,0 +1,33 @@
+html
+    head
+        link(rel='stylesheet', type='text/css', href='css/w3.css')
+        link(rel='stylesheet', type='text/css', href='css/mapEditor.css')
+    body
+        #wrapper.w3-display-container.out
+            #lpanel.w3-display-left.panel.out
+                | left
+            #working.w3-display-middle.out
+                canvas#area(style='border: black solid 1px')
+            #rpanel.w3-display-right.out
+                | right
+                #rWrapper.in
+                    #propWrap.in
+                        p Properties
+                        #properties.scrollable
+                        #propButtWrap
+                                button(onclick='uploadProps()') Change
+                    #objWrap.in
+                        p Objects
+                        #objects.scrollable
+                        #objButtWrap
+                            button(onclick='addObject()') Add
+                            button(onclick='deleteObject()') Delete
+        script(src='js/jquery-3.3.1.js')
+        script(src='js/jquery-ui-1.12.1/jquery-ui.min.js')
+        script(src='js/ojbects.js')
+        script(src='js/mapEditor.js')
+
+        div#draggable
+            div#dHeader
+            div#dBody
+            div#dFooter

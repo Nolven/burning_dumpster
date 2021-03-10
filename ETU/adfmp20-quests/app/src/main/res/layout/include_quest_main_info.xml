@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:rowCount="3"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp">
+
+    <TextView
+        android:layout_row="0"
+        android:id="@+id/quest_item_company_label"
+        android:text="@string/quest_company_name" />
+
+    <TextView
+        android:layout_row="0"
+        android:id="@+id/quest_item_company"
+        android:text="@string/quest_company_name" />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_row="1"
+        android:id="@+id/quest_item_name_label"
+        android:text="@string/quest_name" />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="1"
+        android:id="@+id/quest_item_name"
+        android:text="@string/quest_name" />
+
+    <TextView
+        android:layout_column="2"
+        android:layout_row="1"
+        android:id="@+id/quest_item_genre_label"
+        android:text="@string/quest_item_genre_label" />
+
+    <TextView
+        android:layout_column="3"
+        android:layout_row="1"
+        android:id="@+id/quest_item_genre" />
+
+    <TextView
+        android:id="@+id/quest_item_people"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="@string/quest_people_number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:id="@+id/quest_item_duration"
+        android:text="@string/quest_duration"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_column="2"
+        android:layout_row="2"
+        android:id="@+id/quest_item_complexity"
+        android:text="@string/quest_difficutly"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry"
+        android:paddingTop="5dp"/>
+</GridLayout>

@@ -1,0 +1,19 @@
+.w3-modal#usertrash_modal
+    .w3-modal-content.correct-modal
+        header.container.border
+            .row
+                h2.modal__header.col-md-11 Mushroom's correction
+                button.button.sidebar__close.col-md-1(onclick='usermodal_close()' style="font-size: 25px") &times;
+        .container
+            img#userimg(src="#")
+            input.w3-input.w3-border.modal__params#imgInput(type="file" name="img" accept="image/jpeg,image/png" value="" placeholder="Image")
+            form#modalForm(method="post")
+                input.w3-input.w3-border.modalParams.modal__params(type="text" name="name" placeholder="Name of mushroom")
+                input.w3-input.w3-border.modalParams.modal__params(type="text" name="description" placeholder="Description")
+                input.w3-input.w3-border.modalParams.modal__params(type="text" name="region" placeholder="Region" )
+
+                #userWrapper.d-flex
+
+            button.button#black(onclick="black(false)") Enter
+            button.button#red(onclick="red()") Dismiss
+    script(src="/javascripts/modal.js")

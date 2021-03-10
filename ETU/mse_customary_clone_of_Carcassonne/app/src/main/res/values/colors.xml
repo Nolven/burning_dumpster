@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#996633</color>
+    <color name="colorPrimaryDark">#663300</color>
+    <color name="colorAccent">#663300</color>
+    <color name="colorBackground">#aa7744</color>
+    <color name="colorMenuButton">#ffcc99</color>
+    <color name="colorMenuButtonPressed">#ddaa77</color>
+    <color name="colorModalDialog">#885522</color>
+    <color name="colorGreenButton">#33cc33</color>
+    <color name="colorGreenButtonPressed">#29a329</color>
+    <color name="colorRedButton">#e60000</color>
+    <color name="colorRedButtonPressed">#b30000</color>
+</resources>

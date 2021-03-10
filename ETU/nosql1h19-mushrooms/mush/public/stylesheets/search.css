@@ -1,0 +1,118 @@
+#searchWrap{
+    margin: auto;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 50%;
+    display: inline;
+}
+
+.search__search-input {
+    background: rgba(0, 0, 1, 0.3);
+    border: 1px solid white;
+    width: 100%;
+    padding: 15px 10px;
+
+}
+
+#query{
+    margin-right: 10px;
+}
+
+#contWrap{
+    flex-wrap: wrap;
+    display: flex;
+    overflow-wrap: normal;
+}
+
+.d-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.mushroom__wrapper {
+    width: auto;
+    height: auto;
+    margin: 10px 50px 10px 50px;
+    background: rgba(2.4, 0.21, 0.19, 0.75);
+    border: 1px solid white;
+    position: relative;
+}
+
+
+.mushroom__image-wrapper {
+    border-right: 1px solid white;
+
+}
+
+.mushroom__image {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+}
+
+.mush-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mushroom__name {
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.mushroom__params-wrappers {
+    flex-direction: column;
+    width: 100%;
+}
+.mushroom__params-wrapper-one {
+    border-bottom: 1px solid white;
+    background: #262630;
+}
+
+.mushroom__description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 70%;
+    border-right: 1px solid white;
+}
+
+.mushroom__region {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+    padding-left: 20px;
+}
+
+.mushroom__params-wrapper-two {
+    padding-left: 20px;
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+.mushroom__params-part {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.mushroom__params-bruises {
+    margin-top: 10px;
+}
+
+.par {
+    margin-bottom: 6px;
+}
+
+.mdya {
+    width: 310px;
+}

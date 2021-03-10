@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_game_title">70sp</dimen>
+    <dimen name="menu_button_width">144dp</dimen>
+    <dimen name="menu_button_height">48dp</dimen>
+    <dimen name="image_menu_button_width">40dp</dimen>
+    <dimen name="image_menu_button_height">40dp</dimen>
+    <dimen name="title_text_size">25sp</dimen>
+    <dimen name="settings_text_size">15sp</dimen>
+    <dimen name="player_button_padding">25dp</dimen>
+    <dimen name="game_button_size">60dp</dimen>
+    <dimen name="current_tile_view_size">100dp</dimen>
+    <dimen name="settings_area_width">300dp</dimen>
+    <dimen name="settings_area_height">150dp</dimen>
+    <dimen name="dialog_button_margin">90dp</dimen>
+    <dimen name="pause_dialog_side_margin">100dp</dimen>
+    <dimen name="game_player_icon_size">40dp</dimen>
+    <dimen name="game_player_coin_size">20dp</dimen>
+    <dimen name="game_player_info_margin">15dp</dimen>
+    <dimen name="player_menu_button_size">80dp</dimen>
+    <dimen name="remaining_tile_size">100dp</dimen>
+
+
+
+    <!--Тут обязательно учитывать размер тайла и отступы-->
+    <dimen name="remaining_tiles_width">420dp</dimen>
+    <dimen name="remaining_tiles_height">200dp</dimen>
+
+
+
+
+
+
+
+    <dimen name="default_padding">10dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="default_text_size">18sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="default_margin">7dp</dimen>
+    <dimen name="double_margin">14dp</dimen>
+
+</resources>
+
+
+

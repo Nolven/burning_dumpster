@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PlayerColors">
+        <item>#b30000</item>
+        <item>#0052cc</item>
+        <item>#00994d</item>
+        <item>#cc7a00</item>
+        <item>#990073</item>
+        <item>#37AB9D</item>
+    </string-array>
+
+
+
+    <string-array name="TilesInfo">
+        <item>0122214</item> <!--1-->
+        <item>0211124</item> <!--2-->
+        <item>0122124</item> <!--3-->
+        <item>0212124</item> <!--4-->
+        <item>0120124</item> <!--5-->
+        <item>0212104</item> <!--6-->
+        <item>0221204</item> <!--7-->
+        <item>0122104</item> <!--8-->
+        <item>0221104</item> <!--9-->
+        <item>0211104</item> <!--10-->
+        <item>0111004</item> <!--11-->
+        <item>0121004</item> <!--12-->
+        <item>0112004</item> <!--13-->
+        <item>2212124</item> <!--14-->
+        <item>2221224</item> <!--15-->
+        <item>2122124</item> <!--16-->
+        <item>2221124</item> <!--17-->
+        <item>2211124</item> <!--18-->
+        <item>0222204</item> <!--19-->
+        <item>0222224</item> <!--20-->
+        <item>0222004</item> <!--21-->
+        <item>2222224</item> <!--22-->
+    </string-array>
+
+</resources>

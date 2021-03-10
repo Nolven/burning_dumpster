@@ -1,0 +1,12 @@
+extends layout
+
+block topbar
+    #searchWrap
+        input#query.search__search-input(type="text" name="name" value= query.name)
+    script q = !{query}
+    script(src='/javascripts/search.js')
+
+block content
+    #search__mushrooms-wrap
+
+

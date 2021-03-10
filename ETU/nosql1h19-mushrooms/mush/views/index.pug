@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    #upWrap.d-flex.justify-content-center.align-items-center
+        link(rel='stylesheet', href='/stylesheets/index.css')
+        #mainWrapper.wrap
+            p.offer__citation Metues vitae, non metues mori
+            h1.offer__title Mushrooms
+            form#queryf(action='/search' type='get')
+                input#query.offer__search-input(type="text" name="name")
+                .wrap#bwr
+                    input.button.offer__button.detButton(type="submit" value="I'm definitely not gonna be poisoned" )
+    script(src='/javascripts/index.js')

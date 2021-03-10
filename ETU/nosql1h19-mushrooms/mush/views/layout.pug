@@ -1,0 +1,36 @@
+extends main
+
+block general
+    //Region select modal
+    .w3-modal#modal
+        .w3-modal-content
+            #world-map(style='width: 900px; height: 600px')
+
+    include modal
+
+    //Params bar
+    #leftSidebar.w3-sidebar.w3-bar-block.w3-card.w3-animate-left
+        button.sidebar__close.float-right(onclick='w3_close_left()') Close ×
+        #leftWrapper
+
+    //Content window
+    #main
+        .container-fluid
+            #topBarWrapper.row
+                .col-md-1
+                    .button.button-burger#openNav(onclick='w3_open_left()') ☰
+                    script(src='/javascripts/layout.js')
+                .col-md-2
+                    button.button#openStatistics(onclick="window.location.href='./statistics'") Statistics
+                .col-md-4
+                    block topbar
+                .col-md-3
+                    button.button#openForm(onclick="usermodal_open()") Ух, ща я гриб-то вам придумаю
+                .col-md-2
+                    #regionWrap
+                        button.button#openMap.params Select region
+                        button.button#resetRegion &times
+                        input#region(type="hidden")
+            .row.offer
+                #content
+                    block content

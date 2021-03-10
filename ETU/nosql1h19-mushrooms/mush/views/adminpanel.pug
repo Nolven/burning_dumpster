@@ -1,0 +1,38 @@
+extends main
+
+block general
+
+    include modal
+
+    //Колонка с отображением грибов в "предложке"
+    .w3-row.mmmmm
+        #user_trash.w3-col.s6
+            h3 Mushrooms from users
+            ul.w3-ul.w3-hoverable#userList
+
+        //Враппер дял поиска по основной БД
+        #admin_search.w3-col.s6
+            //Сайдбар с параметрами для поиска
+            #adminSidebar.w3-sidebar.w3-bar-block.w3-card.w3-animate-top(style="display: none;")
+                button.sidebar__close(onclick='admin_sidebar_close()') Close ×
+                #adminSidebarWrapper
+                //Враппер импорта/экспорта бд (но эту часть, я сказал, что сам делал)
+                #iewrap
+                    button.w3-button(onclick="exportDB()") Export db
+                    a#duck(href='/out') Click here
+
+                    button.w3-button(onclick="importDB()" type="file") Import db
+
+            //Топ-бар с кнопками
+            h3 Admin Search
+            .w3-row
+                button#openAdminSidebar.button.button-burger(onclick='admin_sidebar_open()') ☰
+                input#query.mdya.admin__search_input(type="text" name="name")
+                button.button.w3-right.admin_button#adminMush Создать админский гриб
+
+            //Колонка с основной БД
+            #admin_content
+                ul.w3-ul.w3-hoverable#adminList
+
+                    
+    script(src="/javascripts/adminpanel.js")

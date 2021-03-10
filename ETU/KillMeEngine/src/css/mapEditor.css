@@ -1,0 +1,78 @@
+* {
+    border: black solid 1px;
+    max-height: 100%;
+}
+
+.out{
+    display: inline-block;
+    height: 100%;
+    max-height: 100%;
+}
+
+.in{
+    max-height: 100%;
+}
+
+#wrapper{
+    width:100%;
+}
+
+#draggable{
+    width: 20%;
+    position: absolute;
+    visibility: hidden;
+    background-color: #C0C0C0;
+}
+
+#dHeader, #dBody{
+    width:100%;
+    display: block;
+}
+
+.imageLabel { display: block }
+.imageLabel > input { /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.imageLabel > input + img { /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.imageLabel > input:checked + img { /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #f00;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.miniature{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+div.line{
+    white-space: nowrap;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    display: inline-block;
+    width: 100%;
+    height: 60%;
+    background: no-repeat center;
+    background-size: contain;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+}

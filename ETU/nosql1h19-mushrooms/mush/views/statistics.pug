@@ -1,0 +1,31 @@
+extends main
+block general
+    #upWrapWrap
+        script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0")
+        script(src='/javascripts/statistics.js')
+        #statisticsSidebar.w3-sidebar.w3-bar-block.w3-card.w3-animate-left(style="display: none;")
+            button.button.sidebar__close(onclick='statistics_sidebar_close()') Close ×
+            #sidebarContent
+                button(type="file" onclick="exportDB()")
+
+        .container-fluid
+            .row
+                #title
+                    button#openStatisticsSidebar.w3-left.button.button-burger(onclick='statistics_sidebar_open()') ☰
+                    h1 asdasdasd
+            .row
+                #numbers
+                    h1 numbers
+            .row
+                .col-md-4
+                    #left
+                        h4 circle one
+                        canvas#paramCanvas
+                .col-md-8
+                    #rightUp
+                        h4 Regional distribution
+                        canvas#regionCanvas
+                    #rightDown
+                        h4 Edibility
+                        canvas#edibleCanvas
+

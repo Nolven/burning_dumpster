@@ -1,0 +1,251 @@
+html, body, #main{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Roboto, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+    background: #262630 url("../images/offer.png") no-repeat center top / cover;
+    background-attachment: fixed;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Black';
+    line-height: 1.5em;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+div, p, a, span, input, form {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+
+button {
+    background: rgba(1, 1, 1, 0);
+    border: 1px solid white;
+    padding: 15px 25px;
+    color: white;
+    letter-spacing: 0.08em;
+}
+
+button:focus{
+    border: none;
+}
+
+.button {
+    padding: 15px 25px;
+    letter-spacing: 0.08em;
+}
+
+.button:hover {
+    border: 1px solid white;
+    color: #262630;
+    background-color: white;
+    transition: all 0.9s ease;
+}
+.container-fluid {
+    height: 100vh;
+    padding: 5px 2px 0px 2px;
+}
+
+#main {
+
+}
+
+#content {
+    width: 100%;
+}
+
+#upWrap {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: 30px;
+}
+
+#mainWrapper {
+    text-align: center;
+}
+
+.offer__title {
+    font-family: Xtreem;
+    font-size: 73px;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    margin-bottom: 7px;
+    text-shadow:1px 1px 23px 1px rgba(0,0,0,0.30);
+    -webkit-text-shadow:1px 1px 23px 1px rgba(0,0,0,0.30);
+    -moz-text-shadow:1px 1px 23px 1px rgba(0,0,0,0.30);
+}
+
+.offer__citation {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 7px;
+    padding-right: 6px;
+}
+
+.offer__search-input {
+    background: rgba(1, 1, 1, 0);
+    border: 1px solid white;
+    width: 527px;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+
+}
+
+.offer__button {
+    border: 1px solid #262630;
+    box-shadow:1px 1px 23px 1px rgba(0,0,0,0.30);
+    -webkit-box-shadow:1px 1px 23px 1px rgba(0,0,0,0.30);
+    -moz-box-shadow:1px 1px 23px 1px rgba(0,0,0,0.30);
+    background: rgb(88,12,12);
+    background: linear-gradient(90deg, rgba(88,12,12,1) 0%, rgba(157,20,20,1) 100%);
+    transition: all 0.9s ease;
+}
+
+.offer__button:hover {
+    color: white;
+    border: 1px solid white;
+    background: rgb(88,12,12);
+    background: linear-gradient(270deg, rgba(88,12,12,1) 0%, rgba(157,20,20,1) 100%);
+}
+
+.button-burger {
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button-burger:hover {
+    background-color: rgba(1,1,1,0);
+    color: white;
+    border: none;
+}
+
+#openMap{
+    font-size: 15px;
+}
+
+#leftSidebar {
+    background: #262630;
+    padding-left: 6px;
+}
+
+#statisticsSidebar{
+    background: #262630;
+    padding-left: 6px;
+}
+#adminSidebar {
+    background: #262630;
+    padding-left: 6px;
+}
+
+
+.sidebar__close {
+    border: none;
+    padding: 10px 5px;
+}
+
+.correct-modal {
+    background: #262630;
+}
+
+.modal__header {
+    margin-bottom: 6px;
+}
+
+#userWrapper {
+    flex-flow: column wrap;
+    height: 300px;
+    align-content: flex-start;
+}
+
+#black {
+    margin: 10px 0px 20px 0px;
+}
+
+#red {
+    margin-left: 10px;
+}
+
+
+#usertrash_modal{
+    padding-top: 15px;
+}
+
+.modal__params {
+    background: #262630;
+    margin: 10px 0px;
+}
+#topBarWrapper {
+    padding-bottom: 4px;
+}
+
+
+#user_trash {
+    padding: 0px 5px;
+    background: rgba(2.4, 0.21, 0.19, 0.75) ;
+}
+
+
+#admin_search {
+    padding: 0px 5px;
+    background: rgba(2.4, 0.21, 0.19, 0.75) ;
+}
+
+#admin_content ul li:hover {
+    background: #262630;
+}
+    /*
+
+    #main{
+        display: flex;
+        flex-flow: column;
+    }
+
+    #topBarWrapper{
+        width: 100%;
+        flex: 0 1 auto;
+    }
+
+    #flexTopWrapper{
+        display: flex;
+    }
+
+    #content{
+        flex: 1 1 auto;
+    }
+
+    #regionWrap{
+        margin-left: auto;
+        flex-wrap: nowrap;
+    }
+    */
+#map{
+    width: 400px;
+    height: 600px;
+}
+
